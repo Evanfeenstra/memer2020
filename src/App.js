@@ -40,8 +40,8 @@ function App() {
             Primary
           </Button>
         </div>
-        {loading && <LinearProgress />}
       </header>
+      {loading && <LinearProgress />}
 
       <div className="memes">
         {memes.map((meme,i)=> <Meme key={i} {...meme} />)}
